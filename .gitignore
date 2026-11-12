@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Raw AIDev-pop dataset files (CSVs + 100-893 MB JSONs) - see data/README.md for upstream source
+# Excluding raw scraped PR text prevents third-party tokens/presigned URLs from entering git history
+data/aidev_pop/
+**/prs.csv
+**/related_issues.csv
+**/gpt_conventional_commits.csv
+**/pr_commit_details.json
+**/pr_timelines.json
+**/pr_commits.json
+**/pr_comments.json
+**/pr_review_comments.json
+**/prs.json
+**/issues.json
+**/pr_reviews.json
+**/repo_metadata.json
+**/developer_metadata.json
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environments
+.env
+.venv/
+venv/
+env/
